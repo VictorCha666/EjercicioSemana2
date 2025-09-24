@@ -1,6 +1,6 @@
 package org.semana01.modelos;
 
-public class Libro {
+public class Libro implements Comparable<Libro> {
     String isbn;
     String titulo;
     String autor;
@@ -46,5 +46,10 @@ public class Libro {
 
     public void setPaginas(int paginas) {
         this.paginas = paginas;
+    }
+
+    @Override
+    public int compareTo(Libro o) {
+        return this.titulo.compareTo(o.titulo);
     }
 }

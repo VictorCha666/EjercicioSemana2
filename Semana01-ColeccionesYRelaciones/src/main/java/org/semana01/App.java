@@ -19,7 +19,7 @@ public class App {
             System.out.println("Error al cargar el archivo de libros");
             e.printStackTrace();
         }
-
+        coleccion.ordenarLibrosPorTitulo();
         System.out.println("1) Cantidad de libros con más de 500 páginas: " + coleccion.cantidadLibrosMas500Paginas());
         System.out.println("2) Cantidad de libros con menos de 300 páginas: " + coleccion.cantidadLibrosMenos300Paginas());
         System.out.println("3) Títulos de libros con más de 500 páginas: " + coleccion.listarLibrosMas500Paginas());
@@ -27,9 +27,9 @@ public class App {
         System.out.println("5) Suma de páginas de todos los libros: " + coleccion.sumaTotalPaginas());
         System.out.println("6) Libros que superan el promedio de páginas : " + coleccion.listarLibrosMasPaginasPromedio());
         System.out.println("7) Autores sin repetir : " + coleccion.listarAutores());
-        System.out.println("8) Libro con mayor número de páginas: " + coleccion.libroMasPaginas());
-        System.out.println("9) Títulos de los libros: " + coleccion.listarTitulos());
-        System.out.println("10) Autores con más de un libro: " + coleccion.listarAutoresConMasDeUnLibro());
+        System.out.println("8) Obtener los autores que tengan más de 1 libro listado: " + coleccion.autoresConVariosLibros());
+        System.out.println("9) Libro con mas páginas: " + coleccion.libroMasPaginas());
+        System.out.println("10)Todos los títulos de los libros: " + coleccion.todosLosLibros());
 
 
     }
